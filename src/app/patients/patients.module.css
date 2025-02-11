@@ -1,0 +1,34 @@
+.filter {
+  padding: 14px 22px 10px 26px;
+  border-radius: 6px;
+  box-shadow: 3px 3px 5px #bebebe, -3px -3px 5px #ffffff;
+
+  background: transparent;
+  border: 0;
+  height: 40px;
+  line-height: 30px;
+  outline: none !important;
+  background: #e2faee;
+}
+.filter:focus {
+  cursor: default;
+  padding: 14px 22px 10px 26px;
+  box-shadow: inset 3px 3px 5px #cbcbcb, inset -3px -3px 5px #ffffff;
+}
+
+.filterRadio {
+  border: unset !important;
+  padding: 14px 22px 10px 26px;
+  background: #edf1f1 !important;
+  border-radius: 6px;
+  box-shadow: 3px 3px 5px #bebebe, -3px -3px 5px #ffffff;
+}
+.filterRadio[type='radio'] {
+  outline: none !important;
+}
+.customRadio .customControlInput:checked ~ .customControlLabel::after {
+  background-image: none !important;
+  border-radius: 50px;
+  background: #82b0bf;
+  box-shadow: inset -20px 20px 60px #6f96a2, inset 20px -20px 60px #96cadc !important;
+}

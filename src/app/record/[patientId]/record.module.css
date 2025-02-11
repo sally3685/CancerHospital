@@ -1,0 +1,86 @@
+.side {
+  height: 136vh;
+  border-radius: 16px;
+  background-position: center;
+  background-image: linear-gradient(to bottom, #00aa8ea1, #00aa8e7a),
+    url(/recordSide.JPG);
+  z-index: 2;
+}
+
+.sideUp {
+  height: 100%;
+  width: 95%;
+  background: rgba(175, 226, 212, 0.308);
+  border-radius: 16px;
+  backdrop-filter: blur(1.6px);
+  box-shadow: 0px 0px 40px 10px rgba(0, 0, 0, 0.22);
+}
+.filter {
+  padding: 14px 22px 10px 26px;
+  border-radius: 6px;
+  box-shadow: 3px 3px 5px #bebebe, -3px -3px 5px #ffffff;
+
+  background: transparent;
+  border: 0;
+  font-size: 20px;
+  height: 40px;
+  line-height: 30px;
+  outline: none !important;
+}
+.filter:focus {
+  cursor: default;
+  padding: 14px 22px 10px 26px;
+  box-shadow: inset 3px 3px 5px #cbcbcb, inset -3px -3px 5px #ffffff;
+}
+
+table.neumorphic {
+  border-spacing: 0;
+  color: #212121;
+  text-align: center;
+  overflow: hidden;
+  box-shadow: 9px 9px 16px rgba(163, 177, 198, 0.6),
+    -9px -9px 16px rgba(255, 255, 255, 0.6);
+}
+table.neumorphic thead {
+  box-shadow: 9px 9px 16px rgba(163, 177, 198, 0.6);
+}
+table.neumorphic th {
+  padding: 7px;
+}
+
+table.neumorphic > tbody > tr > td {
+  padding: 10px;
+  position: relative;
+}
+
+table.neumorphic > tbody > tr:hover {
+  padding: 20px;
+  box-shadow: 9px 9px 16px rgba(163, 177, 198, 0.6),
+    -9px -9px 16px rgba(255, 255, 255, 0.6);
+}
+.calTd:hover {
+  cursor: default;
+  box-shadow: inset 3px 3px 5px #cbcbcb, inset -3px -3px 5px #ffffff !important;
+}
+table.neumorphic tr td:first-child::before {
+  content: '';
+  position: absolute;
+  padding: 7px;
+  top: 0;
+  left: -5000px;
+  width: 10000px;
+  height: 100%;
+  z-index: -10;
+}
+
+table.neumorphic td:hover::after {
+  content: '';
+  position: absolute;
+  box-shadow: 9px 9px 16px rgba(163, 177, 198, 0.6),
+    -9px -9px 16px rgba(255, 255, 255, 0.6);
+  left: 0;
+  top: -5000px;
+  height: 10000px;
+  width: 100%;
+  z-index: -1;
+}
