@@ -179,7 +179,7 @@ const Page = () => {
               <ChartPie />
             </div>
 
-            <div className="w-full flex lg:justify-between justify-center gap-4 items-center flex-wrap  h-[400px]">
+            <div className="w-full flex lg:justify-between justify-center gap-4 items-center flex-wrap  h-[500px]">
               <h2 className="font-bold w-full  text-xl">Illnesses Detailes</h2>
               <ChartMap />
             </div>
@@ -196,7 +196,7 @@ const Page = () => {
                 Open Gallery of reports
               </h3>
             </TransportLink>
-            <Cards></Cards>
+            <Cards patientId={patientId}></Cards>
           </div>
           <div className="gap-4 flex flex-col lg:w-[40%] w-full h-full min-w-[350px] ">
             <h2 className="text-xl font-bold ">
@@ -208,8 +208,8 @@ const Page = () => {
                 Open full list of previuse Appoinments
               </h3>
             </TransportLink> */}
-            <div className="rounded-[16px] w-full h-full overflow-hidden  min-h-[400px]">
-              <table className="relative w-full h-full min-h-[400px] text-center bg-[#ffffff96]">
+            <div className="rounded-[16px] w-full h-full overflow-hidden  min-h-[500px]">
+              <table className="relative w-full h-full min-h-[500px] text-center bg-[#ffffff96]">
                 <thead className="bg-[#9252f881] font-medium ">
                   <tr>
                     <th className="p-3">Sun</th>
