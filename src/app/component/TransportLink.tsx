@@ -7,7 +7,7 @@ interface Props {
   label: string;
 }
 
-const TransitionLink = ({ href, label }: Props) => {
+const TransitionLink1 = ({ href, label }: Props) => {
   const router = useRouter();
   const pathname = usePathname();
 
@@ -30,4 +30,4 @@ const TransitionLink = ({ href, label }: Props) => {
   );
 };
 
-export default TransitionLink;
+export default TransitionLink1;

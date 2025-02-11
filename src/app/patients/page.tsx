@@ -4,7 +4,7 @@ import users from '@/app/patients/users';
 import Link from 'next/link';
 import styles from '@/app/patients/patients.module.css';
 import TransportLink from '@/app/record/[patientId]/TransportLink';
-
+import TransitionLink1 from '../component/TransportLink';
 const Page = () => {
   const [phone, setPhone] = useState('');
   return (
@@ -66,10 +66,10 @@ const Page = () => {
                     <h1 className="font-bold text-lg">{element.name}</h1>
                     <h2 className="text-sm">{element.number}</h2>
                   </div>
-                  <TransportLink
+                  <TransitionLink1
                     label={'Record'}
                     href={`/record/${element.id}`}
-                  ></TransportLink>
+                  ></TransitionLink1>
                 </div>
               )}
             </div>
