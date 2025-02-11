@@ -1,8 +1,8 @@
 import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { ArrowUpRight } from 'lucide-react';
-
-import 'swiper/swiper-bundle.min.css';
+import 'swiper/css';
+import 'swiper/css/effect-cards';
 
 import './styles.css';
 import { EffectCards } from 'swiper/modules';
