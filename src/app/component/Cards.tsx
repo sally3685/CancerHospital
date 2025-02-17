@@ -32,7 +32,7 @@ export default function Cards({ patientId }: { patientId: string }) {
                 </Link>
               </span>
               <Image
-                className="w-full"
+                className="w-full h-full"
                 src={element.src as string}
                 alt="report photo"
                 width={350}

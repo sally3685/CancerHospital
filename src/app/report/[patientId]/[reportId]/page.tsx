@@ -13,7 +13,7 @@ const Page = async ({
   return (
     <div className="w-full p-4 flex items-center justify-center h-full">
       <div
-        className="w-full lg:w-[40%] h-[95%] flex justify-center items-center rounded-lg gap-4 flex-col relative"
+        className="w-[90%] lg:w-[40%] h-[95%] flex justify-center items-center rounded-lg gap-4 flex-col relative"
         style={{
           background: 'linear-gradient(45deg, #9252f86e, #008872ba)',
         }}
